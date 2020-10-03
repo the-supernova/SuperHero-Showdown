@@ -14,7 +14,11 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 .jumbotron{
-    opacity:1 ;
+    opacity:.7 ;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
 }
 .submit{
     padding-top: 10cm; 

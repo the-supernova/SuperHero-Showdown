@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=ee , initial-scale=1.0">
     <title>SUPERHERO
     </title>
-    <link rel="icon" href="public\imgs\man+saver+super+superhero+superman+icon-1320195496238765624_32.png" type="image/x-icon">
+    <link rel="icon" href="public\imgs\man+saver+super+superhero+superman+icon-1320195496238765624_32.png"
+        type="image/x-icon">
     <script src="less.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="public\imgs\font-awesome.min.css">
+    <link rel="stylesheet" href="public\css\font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Monoton&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public\imgs\bootstrap.css">
-    <link rel="stylesheet" href="public\imgs\styles.css">
+    <link rel="stylesheet" href="public\css\bootstrap.css">
+    <link rel="stylesheet" href="public\css\styles.css">
 </head>
 
 <body>
@@ -31,9 +32,11 @@
         </div>
         <div class="jumbotron jumbotron-fluid" background="Black">
             <div class="container">
-                <h1 class="display-4"> HOW TO PLAY</h1>
+                <h1 class="display-4"> LETS SEE WHO WINS!!</h1>
                 <h2>
-                    <li class="lead">Choose a number between 1- 500</li>
+                    <li class="lead" col>pick 2 numbers</li>
+                    <li class="lead">Every number is associated with a superhero, click on play to compare stats of the two superheroes</li>
+                    <li class="lead">see who wins the battle!!</li>
                 </h2>
             </div>
         </div>
@@ -42,21 +45,9 @@
                 <div class="card">
                     <div class="card-body">
                         <img src="data:image/png;base64,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"
-                            class="card-img-top" alt="...">
-                        <h5 class="card-title">super hero name</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                            containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                            Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Choose a number between 1 and 500</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
+                            class="card-img-top" alt="hero">
+                        <h5 class="card-title">Choose a hero</h5>
+                        <p class="card-text">the stats appear here</p>
 
                         </form>
                         <!--a href="#" class="btn btn-primary">Go somewhere</a-->
@@ -68,34 +59,32 @@
                     <div class="card-body">
                         <img src="data:image/png;base64,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"
                             class="card-img-top" alt="...">
-                        <h5 class="card-title">super hero name</h5>
-                        <p class="card-text">All info aboutLorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Choose a number between 1 and 500</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                        </form>
+                        <h5 class="card-title">Choose a hero</h5>
+                        <p class="card-text">the stats appear here</p>
+
 
                         <!--a href="#" class="btn btn-primary">Go somewhere</a-->
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="height:800px; margin:0 auto;[B]padding:20px 0;[/B]">
-            
-                <div class="text-center">
 
-                    <a href="public\imgs\popup.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">round
-                        One</a>
-                </div>
+
         </div>
+        <div style="height:800px; margin-left: 100px; margin-right: 100px ;margin-top: 50px;[B]padding:100px 0;[/B]">
+
+            <form action="/" , method="POST" class="text-center">
+                <div class="form-group">
+
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter a number">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter a number">
+                </div>
+                <button type="submit" class="btn btn-primary text-center">PLAY</button>
+            </form>
+
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
