@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs'); -%>
+<h1>Round 2!</h1>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<%=pic1%>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><%=sh1%></h5>
+                          <p class="card-text"><%=du1%></p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <h1>Vs</h1>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<%=pic2%>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><%=sh2%></h5>
+                          <p class="card-text"><%=du2 %></p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <%if(Number(du1)>Number(du2)){ %>
+                <h1><%=sh1%> had the last laugh!</h1>
+            <%}else if(Number(du1)==Number(du2)){%>
+                <h1>Its a tie</h1>
+            <%}else{%>
+                <h1><%=sh2%> had the last laugh!</h1>
+            <%}%>
+
+            <a href="/round5" role="button">Next Round</a>
+            
+        </div>
+    
+</body>
+</html>
