@@ -1,0 +1,42 @@
+
+h1.sup{
+    font-family: 'Anton', sans-serif; 
+font-family: 'Black Ops One', cursive;
+font-family: 'Monoton', cursive;
+font-weight: 600;
+font-stretch: extra-expanded;
+font-size: 100px;
+color: white;
+}
+h1.display-4
+{font-family: 'Roboto', sans-serif;}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.jumbotron{
+    opacity:1 ;
+}
+.submit{
+    padding-top: 10cm; 
+    margin-top : 5cm;
+}
+body{
+  width: 100%;
+  background-image:url("https://wallpaperaccess.com/full/19681.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card{
+    color:black;
+}
+a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    
+}
