@@ -19,8 +19,8 @@
             <div class="card">
                 <img src="<%=pic1%>" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"><%=sh1%></h5>
-                  <p class="card-text"><%=du1%></p>
+                  <h5 class="card-title text-center"><%=sh1%></h5>
+                  <p class="card-text text-center"><%=du1%></p>
                 </div>
               </div>
         </div>
@@ -28,8 +28,8 @@
             <div class="card">
                 <img src="<%=pic2%>" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title"><%=sh2%></h5>
-                  <p class="card-text"><%=du2 %></p>
+                  <h5 class="card-title text-center"><%=sh2%></h5>
+                  <p class="card-text text-center"><%=du2 %></p>
                 </div>
               </div>
         </div>
@@ -37,14 +37,7 @@
 </div>
 <div style="height:800px;width: 800px; margin-top: 50px;margin-left: auto;margin-right: auto;[B]padding:20px 0;[/B]">
     <div class="jumbotron text-center">
-                <%if(Number(du1)>Number(du2)){ %>
-                    <h1 style="color: white;"><%=sh1%> had the last laugh!</h1>
-                <%}else if(Number(du1)==Number(du2)){%>
-                    <h1 style="color: white;">Its a tie</h1>
-                <%}else{%>
-                    <h1 style="color: white;"><%=sh2%> had the last laugh!</h1>
-                <%}%>
-    
+                <h1><%=cnt1%>-<%=cnt2%></h1>
                 <a href="/round5" class="btn btn-danger" role="button">Next Round</a>
             </div>
             </div>

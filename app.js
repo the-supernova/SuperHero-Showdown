@@ -3,7 +3,7 @@ const bodyParser=require("body-parser");
 const axios=require("axios");
 
 const app=express();
-let h1,h2;
+let h1,h2,cnt1=0,cnt2=0;
 
 app.set('view engine', 'ejs');
 
@@ -27,13 +27,21 @@ app.post("/", async(req,res) =>{
     var hero2 = await axios.get(link2);
     h2=hero2;
 
+    if(Number(hero1.data.powerstats.intelligence)>Number(hero2.data.powerstats.intelligence)){
+      cnt1++;
+    }
+    else{
+      cnt2++;
+    }
     res.render('home',{
         sh1:hero1.data.name,
         sh2:hero2.data.name,
         i1:hero1.data.powerstats.intelligence,
         i2:hero2.data.powerstats.intelligence,
         pic1:hero1.data.image.url,
-        pic2:hero2.data.image.url
+        pic2:hero2.data.image.url,
+        cnt1:cnt1,
+        cnt2:cnt2
     });
   
   } catch (error) {
@@ -43,58 +51,99 @@ app.post("/", async(req,res) =>{
 });
 
 app.get('/round2',function(req,res){
+  if(Number(h1.data.powerstats.strength)>Number(h2.data.powerstats.strength)){
+    cnt1++;
+  }
+  else{
+    cnt2++;
+  }
     res.render('round2',{
         sh1:h1.data.name,
         sh2:h2.data.name,
         st1:h1.data.powerstats.strength,
         st2:h2.data.powerstats.strength,
         pic1:h1.data.image.url,
-        pic2:h2.data.image.url
+        pic2:h2.data.image.url,
+        cnt1:cnt1,
+        cnt2:cnt2
     });
 });
 
 app.get('/round3',function(req,res){
+  if(Number(h1.data.powerstats.speed)>Number(h2.data.powerstats.speed)){
+    cnt1++;
+  }
+  else{
+    cnt2++;
+  }
   res.render('round3',{
       sh1:h1.data.name,
       sh2:h2.data.name,
       sp1:h1.data.powerstats.speed,
       sp2:h2.data.powerstats.speed,
       pic1:h1.data.image.url,
-      pic2:h2.data.image.url
+      pic2:h2.data.image.url,
+      cnt1:cnt1,
+      cnt2:cnt2
   });
 });
 
 app.get('/round4',function(req,res){
+  if(Number(h1.data.powerstats.durability)>Number(h2.data.powerstats.durability)){
+    cnt1++;
+  }
+  else{
+    cnt2++;
+  }
   res.render('round4',{
       sh1:h1.data.name,
       sh2:h2.data.name,
       du1:h1.data.powerstats.durability,
       du2:h2.data.powerstats.durability,
       pic1:h1.data.image.url,
-      pic2:h2.data.image.url
+      pic2:h2.data.image.url,
+      cnt1:cnt1,
+      cnt2:cnt2
   });
 });
 
 app.get('/round5',function(req,res){
+  if(Number(h1.data.powerstats.power)>Number(h2.data.powerstats.power)){
+    cnt1++;
+  }
+  else{
+    cnt2++;
+  }
   res.render('round5',{
       sh1:h1.data.name,
       sh2:h2.data.name,
       po1:h1.data.powerstats.power,
       po2:h2.data.powerstats.power,
       pic1:h1.data.image.url,
-      pic2:h2.data.image.url
+      pic2:h2.data.image.url,
+      cnt1:cnt1,
+      cnt2:cnt2
   });
 });
 
 app.get('/round6',function(req,res){
+  if(Number(h1.data.powerstats.combat)>Number(h2.data.powerstats.combat)){
+    cnt1++;
+  }
+  else{
+    cnt2++;
+  }
   res.render('round6',{
       sh1:h1.data.name,
       sh2:h2.data.name,
       co1:h1.data.powerstats.combat,
       co2:h2.data.powerstats.combat,
       pic1:h1.data.image.url,
-      pic2:h2.data.image.url
+      pic2:h2.data.image.url,
+      cnt1:cnt1,
+      cnt2:cnt2
   });
+  cnt1=0,cnt2=0;
 });
 
 
