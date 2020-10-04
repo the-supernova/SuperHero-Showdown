@@ -146,6 +146,41 @@ app.get('/round6',function(req,res){
   cnt1=0,cnt2=0;
 });
 
+app.get('/quiz', function(req,res){
+  res.sendFile(__dirname+"/quizzes.html");
+});
+
+app.get('/batman', function(req,res){
+  res.sendFile(__dirname+"/batman.html");
+});
+
+app.get('/wonderwoman', function(req,res){
+  res.sendFile(__dirname+"/wonderwoman.html");
+});
+
+app.get('/captain-america', function(req,res){
+  res.sendFile(__dirname+"/captain-america.html");
+});
+
+app.get('/superman', function(req,res){
+  res.sendFile(__dirname+"/superman.html");
+});
+
+app.get('/spiderman', function(req,res){
+  res.sendFile(__dirname+"/spiderman.html");
+});
+
+app.get('/thor', function(req,res){
+  res.sendFile(__dirname+"/thor.html");
+});
+
+app.get('/blackwidow', function(req,res){
+  res.sendFile(__dirname+"/blackwidow.html");
+});
+
+app.get('/ironman', function(req,res){
+  res.sendFile(__dirname+"/ironman.html");
+});
 
 app.listen(3000,function(){
     console.log("Server is running at port 3000");
