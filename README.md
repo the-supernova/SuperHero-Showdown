@@ -7,3 +7,7 @@ This is a game where Superheroes fight on the basis of their powerstats and the 
 - Express.js (*for fetching data from public API through AXIOS request*)
 - EJS
 - Bootstrap
+## Instructions for testing
+1. Clone or download the repo and `cd` into the location of repo using your terminal.
+2. Run `npm i` to install all dependencies.
+3. Run `node app.js` and see the application go live!
